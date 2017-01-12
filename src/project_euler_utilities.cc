@@ -10,7 +10,7 @@
 void split(const std::string &s, char delim, std::vector<std::string> &elems) {
   std::stringstream ss;
   ss.str(s);
-  str:string item;
+  std::string item;
   while (std::getline(ss, item, delim)) {
     elems.push_back(item);
   }
@@ -22,9 +22,9 @@ void load_csv_to_matrix(const std::string path, std::vector<std::vector<std::str
 
   if (my_file.is_open()) {
     while (std::getline(my_file, line)) {
-      std::std::vector<std::string> row;
+      std::vector<std::string> row;
       split(line, ',', row);
-      v.push_back();
+      v.push_back(row);
     }
     my_file.close();
   }
