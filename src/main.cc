@@ -2,11 +2,11 @@
 
 #include <iostream>
 #include <string>
-#include <vector>
+//#include <vector>
 
 int main() {
-  std::vector<std::vector<std::string>> v;
-  std::string path = "./p081_matrix.txt";
+  std::vector<std::vector<int>> v;
+  std::string path = "/Users/home/project-euler-utilities/test/p081_matrix.txt";
 
   load_csv_to_matrix(path, v);
 
